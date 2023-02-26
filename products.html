@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head><title>Products</title>
+  <meta charset="UTF-8">
+	<title>Glams of Merci</title>
+	<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+  <link rel="shorcut icon" type="image/png" href="images/img0.png">
+<script language=javascript>
+
+ function prod()
+ {
+    var customer= frmAbc.txtCustomer.value;
+	
+	var img7= frmAbc.txtimg7.value;
+	var img8=frmAbc.txtimg8.value;
+	var img9=frmAbc.txtimg9.value;
+	var img10=frmAbc.txtimg10.value;
+  var img11=frmAbc.txtimg11.value;
+  var img12=frmAbc.txtimg12.value;
+  var img13=frmAbc.txtimg13.value;
+  var img14=frmAbc.txtimg14.value;
+  var img15=frmAbc.txtimg15.value;
+  var img16=frmAbc.txtimg16.value;
+  var img17=frmAbc.txtimg17.value;
+  var img18=frmAbc.txtimg18.value;
+	
+	if(frmAbc.txtCustomer.value=="")
+	{
+	  alert("Check the Customer Name");
+	  System.exit(0);  
+	}
+	
+	else
+	{
+	var total = parseFloat(img7) + parseFloat(img8) + parseFloat(img9) + parseFloat(img10)+ parseFloat(img11)+ parseFloat(img12)+ parseFloat(img13)+ parseFloat(img14)+ parseFloat(img15)+ parseFloat(img16)+ parseFloat(img17)+ parseFloat(img18);
+	
+	document.write("<center><font color=black><h1>-----Receipt----</h1>");
+	document.write("<br>Name of Customer : ");
+	document.write(customer);
+	
+	document.write("<br><br>Total Amount : ");	
+	document.write("₱" + total);
+	
+	if(total<=5000)
+	{
+	document.write("<br><br><font color=black>Would You like to Order More ? " + customer );	
+  document.write("<br><br><a href=products.html>Go back")
+	}
+	
+	else
+	{
+	document.write("<br><br><font color=black>Thank you " + customer + " come again !");
+  document.write("<br><br><a href=products.html>Go back")
+	}
+	
+	}
+	
+	
+ }
+
+
+
+</script>
+
+<style>
+
+</style>
+
+</head>
+
+<body style="background-color: #696969">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Glams of Merci</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="products.html">Products</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">About&nbspUs</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact&nbspUs</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="feedback.html">feedback</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+<br><br><br><center><h1>Our Products</h1><br>
+<form name=frmAbc>
+  <table align="center">   
+      <tr><td>Customer Name</td>
+      <td><input type=text size=40 name=txtCustomer></td>
+      </tr>
+		<tr>
+			<td>
+        <img src="images/img7.jpeg" height="350" width="400"/><br>
+        <center><input type=checkbox onclick=txtimg7.value=5000>Watch#1......5,000</center>
+        <input type=hidden name=txtimg7 size=5 value=0>
+			</td>
+			<td>
+        <img src="images/img8.jpg" height="350" width="400"/><br>
+        <center><input type=checkbox onclick=txtimg8.value=1000>Belt#1......1,000</center> 
+        <input type=hidden name=txtimg8 size=5 value=0>
+			</td>
+			<td>
+        <img src="images/img9.jpg" height="350" width="400"/><br>
+        <center><input type=checkbox onclick=txtimg9.value=100>Tuna in a can......100</center>
+        <input type=hidden name=txtimg9 size=5 value=0>
+			</td>
+		</tr>
+		<tr>
+			<td>
+        <img src="images/img10.jpeg" height="350" width="400"/><br>
+        <center><input type=checkbox onclick=txtimg10.value=10000>Bag#1......10,000</center>
+        <input type=hidden name=txtimg10 size=5 value=0>
+			</td>
+			<td>
+        <img src="images/img11.jpg" height="350" width="400"/><br>
+        <center><input type=checkbox onclick=txtimg11.value=100>Cornbeef......100</center> 
+        <input type=hidden name=txtimg11 size=5 value=0>
+			</td>
+			<td>
+        <img src="images/img12.jpg" height="350" width="400"/><br>
+        <center><input type=checkbox onclick=txtimg12.value=950>Coffee...950.00 </center>
+        <input type=hidden name=txtimg12 size=5 value=0>
+			</td>
+		</tr>
+		<tr>
+			<td>
+        <img src="images/img13.jpeg" height="350" width="400"/><br>
+        <center><input type=checkbox onclick=txtimg13.value=700>Clothe#1......700</center>
+        <input type=hidden name=txtimg13 size=5 value=0>
+			</td>
+			<td>
+        <img src="images/img14.jpg" height="350" width="400"/><br>
+        <center><input type=checkbox onclick=txtimg14.value=500>Cup Noodles......500</center>
+        <input type=hidden name=txtimg14 size=5 value=0>
+			</td>
+			<td>
+        <img src="images/img15.jpeg" height="350" width="400"/><br>
+        <center><input type=checkbox onclick=txtimg15.value=700>Clothes#2......700 </center>
+        <input type=hidden name=txtimg15 size=5 value=0>
+			</td>
+		</tr>
+		<tr>
+			<td>
+        <img src="images/img16.jpeg" height="350" width="400"/><br>
+        <center><input type=checkbox onclick=txtimg16.value=10000>Bag#2......10,000 </center>
+        <input type=hidden name=txtimg16 size=5 value=0>
+			</td>
+			<td>
+        <img src="images/img17.jpg" height="350" width="400"/><br>
+        <center><input type=checkbox onclick=txtimg17.value=5000>Watch#2...5,000 </center>
+        <input type=hidden name=txtimg17 size=5 value=0>
+			</td>
+			<td>
+        <img src="images/img18.jpeg" height="350" width="400"/><br>
+        <center><input type=checkbox onclick=txtimg18.value=10000>Bag#3......10,000</center>
+        <input type=hidden name=txtimg18 size=5 value=0>
+			</td>
+		</tr>
+ 
+    <tr><td colspan=3 align=center>
+      <input type=button value="Click to Compute" onclick=prod()>&nbsp&nbsp&nbsp
+      <input type=reset value=Reset></tr>
+      </td>
+      
+</table>   
+</form>
+</body>
+</html>
